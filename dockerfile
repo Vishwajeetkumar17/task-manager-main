@@ -18,7 +18,7 @@ COPY frontend ./frontend
 RUN npm run build --prefix frontend
 
 # Expose port for backend (assumed on 3000)
-EXPOSE 3000
+EXPOSE 5000
 
 # Start backend server
 CMD ["npm", "start", "--prefix", "backend"]
